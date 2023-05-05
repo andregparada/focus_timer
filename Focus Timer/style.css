@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #ffffff;
+    --bg-controls: hsla(240, 9%, 89%, 1);
+    --ft-color: hsla(240, 6%, 21%, 1);
+}
+
+body {
+    background-color: var(--bg-color);
+
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    gap: 19.2rem;
+}
+
+span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(8rem, 10rem + 10vw , 12.6rem);
+    line-height: 14.8rem;
+    color: var(--ft-color);
+}
+
+#timer-block {
+    display: grid;
+    align-content: center;
+}
+
+#timer {
+    margin-bottom: 1.7rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button svg {
+    width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+#audio-controls {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 3.2rem;
+}
+
+/* .forest svg path,
+.rain  svg path,
+.coffee-shop  svg path,
+.fireplace  svg path {
+
+} */
+#audio-controls button{
+    background: var(--bg-controls);
+    border-radius: 24px;
+    padding: 4.8rem 4.2rem;
+}
